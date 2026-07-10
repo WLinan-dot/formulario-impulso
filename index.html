@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impulso | Empecemos a implementar tu asistente</title>
+<meta name="description" content="Contanos sobre tu negocio y dejá todo listo para que Impulso empiece a trabajar en tus conversaciones de WhatsApp en pocos días.">
+<link rel="canonical" href="https://www.impulso.com/empezar">
+<meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="https://www.impulso.com" class="logo" aria-label="Impulso, ir al inicio">Impulso</a>
+    <a href="https://wa.me/573502188008?text=Hola%2C%20tengo%20una%20duda%20sobre%20el%20formulario%20de%20inicio"
+       class="btn btn-accent btn-header"
+       target="_blank" rel="noopener"
+       aria-label="Hablar por WhatsApp con Impulso">
+      Hablar por WhatsApp
+    </a>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <!-- ============ INTRO ============ -->
+  <section class="form-hero">
+    <div class="container form-hero-inner">
+      <p class="eyebrow eyebrow--center">Primeros pasos</p>
+      <h1>Empecemos a implementar Impulso en tu negocio</h1>
+      <p class="form-hero-sub">
+        Este formulario nos toma unos minutos y nos deja todo listo para dejar tu asistente
+        funcionando en tu WhatsApp en pocos días. No perdés tu app móvil ni cambiás tu número.
+      </p>
+      <ol class="progress-track" aria-label="Pasos del formulario">
+        <li class="progress-step is-active" data-step-label="1">Tu negocio</li>
+        <li class="progress-step" data-step-label="2">WhatsApp</li>
+        <li class="progress-step" data-step-label="3">Google</li>
+        <li class="progress-step" data-step-label="4">Operación</li>
+        <li class="progress-step" data-step-label="5">Objetivo</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FORMULARIO ============ -->
+  <section class="form-section">
+    <div class="container form-container">
+
+      <form id="intake-form" class="intake-card" novalidate>
+
+        <!-- Paso 1 -->
+        <fieldset class="form-step is-active" data-step="1">
+          <legend class="step-title">
+            <span class="step-number">01</span>
+            Tu negocio
+          </legend>
+          <p class="step-desc">Para conocerte y preparar todo a tu medida.</p>
+
+          <div class="field">
+            <label for="empresa">Nombre de la empresa</label>
+            <input type="text" id="empresa" name="empresa" required autocomplete="organization">
+          </div>
+
+          <div class="field">
+            <label for="rubro">Rubro</label>
+            <select id="rubro" name="rubro" required>
+              <option value="" disabled selected>Elegí una opción</option>
+              <option value="salud">Salud / Odontología</option>
+              <option value="inmobiliaria">Inmobiliaria</option>
+              <option value="manufactura">Manufactura a medida</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="contacto-nombre">Nombre y cargo del contacto</label>
+              <input type="text" id="contacto-nombre" name="contacto_nombre" placeholder="Ej: María Pérez, Gerente comercial" required autocomplete="name">
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="contacto-email">Email de contacto</label>
+              <input type="email" id="contacto-email" name="contacto_email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="contacto-telefono">Teléfono de contacto</label>
+              <input type="tel" id="contacto-telefono" name="contacto_telefono" required autocomplete="tel">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Paso 2 -->
+        <fieldset class="form-step" data-step="2">
+          <legend class="step-title">
+            <span class="step-number">02</span>
+            WhatsApp
+          </legend>
+          <p class="step-desc">El número donde tus clientes ya te escriben.</p>
+
+          <div class="field">
+            <label for="whatsapp-numero">Número de WhatsApp del negocio</label>
+            <input type="tel" id="whatsapp-numero" name="whatsapp_numero" placeholder="+57 350 218 8008" required>
+          </div>
+
+          <div class="field">
+            <span class="field-label">¿Ya tenés la app de WhatsApp Business instalada en ese número?</span>
+            <div class="radio-group">
+              <label class="radio-option"><input type="radio" name="whatsapp_business_app" value="si" required> Sí</label>
+              <label class="radio-option"><input type="radio" name="whatsapp_business_app" value="no"> No</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <span class="field-label">¿Alguien más del equipo usa ese número hoy?</span>
+            <div class="radio-group">
+              <label class="radio-option"><input type="radio" name="whatsapp_compartido" value="si" required> Sí</label>
+              <label class="radio-option"><input type="radio" name="whatsapp_compartido" value="no"> No</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Paso 3 -->
+        <fieldset class="form-step" data-step="3">
+          <legend class="step-title">
+            <span class="step-number">03</span>
+            Google
+          </legend>
+          <p class="step-desc">Para conectar tu calendario, correo y hojas de cálculo.</p>
+
+          <div class="field">
+            <label for="google-email">Email de Google del negocio</label>
+            <input type="email" id="google-email" name="google_email" required>
+          </div>
+
+          <div class="field">
+            <span class="field-label">Ese correo, ¿es de Google Workspace (pago) o Gmail gratuito?</span>
+            <div class="radio-group">
+              <label class="radio-option"><input type="radio" name="google_tipo" value="workspace" required> Workspace</label>
+              <label class="radio-option"><input type="radio" name="google_tipo" value="gmail"> Gmail gratuito</label>
+              <label class="radio-option"><input type="radio" name="google_tipo" value="no-se"> No estoy seguro</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="google-autorizado">Persona autorizada para dar permisos</label>
+            <input type="text" id="google-autorizado" name="google_autorizado" placeholder="Nombre de quien puede aprobar accesos">
+          </div>
+        </fieldset>
+
+        <!-- Paso 4 -->
+        <fieldset class="form-step" data-step="4">
+          <legend class="step-title">
+            <span class="step-number">04</span>
+            Operación
+          </legend>
+          <p class="step-desc">Así calibramos las respuestas a tu forma de trabajar.</p>
+
+          <div class="field">
+            <label for="horario">Horario de atención</label>
+            <input type="text" id="horario" name="horario" placeholder="Ej: Lunes a viernes, 8am a 6pm">
+          </div>
+
+          <div class="field">
+            <label for="solicitudes">Las preguntas o pedidos más frecuentes que recibís por WhatsApp</label>
+            <textarea id="solicitudes" name="solicitudes" rows="3" placeholder="Ej: precios, disponibilidad, agendar visita..."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="agenda-actual">¿Cómo agendás citas o reuniones hoy?</label>
+            <select id="agenda-actual" name="agenda_actual">
+              <option value="" disabled selected>Elegí una opción</option>
+              <option value="google-calendar">Google Calendar</option>
+              <option value="agenda-fisica">Agenda física</option>
+              <option value="otro-sistema">Otro sistema</option>
+              <option value="ninguno">Ninguno todavía</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="catalogo">Catálogo de productos o servicios (opcional)</label>
+            <textarea id="catalogo" name="catalogo" rows="3" placeholder="Pegá una lista, o contanos cómo podemos conseguirlo"></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Paso 5 -->
+        <fieldset class="form-step" data-step="5">
+          <legend class="step-title">
+            <span class="step-number">05</span>
+            Objetivo
+          </legend>
+          <p class="step-desc">Lo último, para enfocar bien el arranque.</p>
+
+          <div class="field">
+            <label for="problema-principal">¿Qué te gustaría resolver primero?</label>
+            <select id="problema-principal" name="problema_principal" required>
+              <option value="" disabled selected>Elegí una opción</option>
+              <option value="agendar">Agendar citas automáticamente</option>
+              <option value="cotizar">Cotizar más rápido</option>
+              <option value="faq">Responder preguntas frecuentes</option>
+              <option value="calificar">Calificar mejor a quien escribe</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <span class="field-label">¿Qué plan te interesa?</span>
+            <div class="radio-group radio-group--stack">
+              <label class="radio-option"><input type="radio" name="plan_interes" value="esencial"> Agente Esencial</label>
+              <label class="radio-option"><input type="radio" name="plan_interes" value="comercial"> Agente Comercial</label>
+              <label class="radio-option"><input type="radio" name="plan_interes" value="estrategico"> Agente Estratégico</label>
+              <label class="radio-option"><input type="radio" name="plan_interes" value="no-se"> Todavía no sé, quiero que me asesoren</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Navegación -->
+        <div class="form-nav">
+          <button type="button" class="btn btn-ghost" id="btn-prev">Atrás</button>
+          <span class="form-nav-status" id="form-status" aria-live="polite"></span>
+          <button type="button" class="btn btn-accent" id="btn-next">Siguiente</button>
+          <button type="submit" class="btn btn-accent btn-large" id="btn-submit" hidden>Enviar y agendar arranque</button>
+        </div>
+
+      </form>
+
+      <!-- Estado de éxito -->
+      <div class="intake-card success-card" id="success-card" hidden>
+        <div class="success-icon" aria-hidden="true">✓</div>
+        <h2>¡Listo, ya tenemos tu información!</h2>
+        <p>En menos de 24 horas te escribimos por WhatsApp para coordinar el arranque.</p>
+        <a href="https://wa.me/573502188008" class="btn btn-accent btn-large" target="_blank" rel="noopener">
+          Escribirnos mientras tanto
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="logo logo--footer">Impulso</p>
+      <p class="footer-slogan">Menos operación. Más crecimiento.</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="https://www.impulso.com">Volver al sitio</a></li>
+      <li><a href="mailto:io.impulso@gmail.com">io.impulso@gmail.com</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

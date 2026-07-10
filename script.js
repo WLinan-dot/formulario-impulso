@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
      y armá los módulos siguientes para escribir en Sheets,
      notificarte por email o WhatsApp, etc.)
      ======================================================= */
-  var WEBHOOK_URL = 'https://us2.make.com/1406605/scenarios/5622489/edit';
+  var WEBHOOK_URL = 'https://hook.us2.make.com/qni70t3sdkx8tecx0w6vfqhip3ddylv3';
 
   var form = document.getElementById('intake-form');
   var steps = Array.prototype.slice.call(document.querySelectorAll('.form-step'));
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     fetch(WEBHOOK_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'text/plain' },
       body: JSON.stringify(data)
     })
       .then(function () {
